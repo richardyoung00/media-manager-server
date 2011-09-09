@@ -24,13 +24,12 @@
     boolean success = false;
     try {
         success = fOld.renameTo(fNew);
-
     } catch (Exception e) {
     }
 
 
     if (!success) {
-        out.println(oldValue + Util.jMessage("Could not rename the selected file.\nPossibly the files permissions need to be changed"));
+        out.println(oldValue + Util.jMessage("Could not rename the selected file. Possibly the files permissions need to be changed"));
     } else {
         out.println(newValue);
     }

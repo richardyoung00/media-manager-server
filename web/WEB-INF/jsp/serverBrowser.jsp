@@ -18,8 +18,6 @@
                 src="${pageContext.request.contextPath}/resources/script/jquery.jeditable.mini.js"></script>
         <script type='text/javascript'
                 src="${pageContext.request.contextPath}/resources/script/contextMenu/jquery.contextMenu.js"></script>
-        <script type='text/javascript'
-                src="${pageContext.request.contextPath}/resources/script/jquery.rightClick.js"></script>
 
 
         Browse the server
