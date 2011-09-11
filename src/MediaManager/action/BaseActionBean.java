@@ -1,6 +1,7 @@
 package MediaManager.action;
 
 import MediaManager.model.User;
+import MediaManager.util.PropertyFetcher;
 import MediaManager.util.PropertyInjector;
 import net.sourceforge.stripes.action.ActionBean;
 import net.sourceforge.stripes.action.ActionBeanContext;
@@ -9,14 +10,13 @@ import net.sourceforge.stripes.action.ActionBeanContext;
  * Base action class
  */
 public abstract class BaseActionBean implements ActionBean {
-    ActionBeanContext context;
+    private ActionBeanContext context;
 
+    protected PropertyFetcher properties = new PropertyFetcher();
 
-    private PropertyInjector propertyInjector = new PropertyInjector();
 
     public BaseActionBean() {
         super();
-        propertyInjector.injectProperties(this);
     }
 
     public void setContext(ActionBeanContext context) {

@@ -1,6 +1,6 @@
 <ul id="nav">
-    <li class="current"><a href="http://www.webdesignerwall.com">Home</a></li>
-    <li><a href="http://www.ndesign-studio.com">My Projects</a>
+    <li class="current"><a href="/home.action">Home</a></li>
+    <%--<li><a href="http://www.ndesign-studio.com">My Projects</a>
         <ul>
             <li><a href="http://www.ndesign-studio.com">N.Design Studio</a>
                 <ul>
@@ -18,32 +18,13 @@
             <li><a href="http://icondock.com">IconDock</a></li>
             <li><a href="http://bestwebgallery.com">Best Web Gallery</a></li>
         </ul>
-    </li>
-    <li><a href="server.action">Server Browser</a>
+    </li>--%>
+    <li><a href="#">Server Browser</a>
         <ul>
-            <li><a href="#">Team</a>
-                <ul>
-                    <li><a href="#">Sub-Level Item</a></li>
-                    <li><a href="#">Sub-Level Item</a>
-                        <ul>
-                            <li><a href="#">Sub-Level Item</a></li>
-                            <li><a href="#">Sub-Level Item</a></li>
-                            <li><a href="#">Sub-Level Item</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#">Sub-Level Item</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Sales</a></li>
-            <li><a href="#">Another Link</a></li>
-            <li><a href="#">Department</a>
-                <ul>
-                    <li><a href="#">Sub-Level Item</a></li>
-                    <li><a href="#">Sub-Level Item</a></li>
-                    <li><a href="#">Sub-Level Item</a></li>
-                </ul>
-            </li>
+            <li><a href="server.action?media=series">Tv Series</a></li>
+            <li><a href="server.action?media=movies">Movies</a></li>
+            <li><a href="server.action?media=music">Music</a></li>
+            <li><a href="server.action?media=incoming">Incoming</a></li>
         </ul>
     </li>
     <li><a href="#">About</a></li>
