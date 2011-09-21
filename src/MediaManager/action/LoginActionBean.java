@@ -10,6 +10,7 @@ import net.sourceforge.stripes.validation.Validate;
  * Action class for performing user operations
  */
 
+@UrlBinding("/login")
 public class LoginActionBean extends BaseActionBean {
 
 

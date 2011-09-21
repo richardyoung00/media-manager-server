@@ -23,7 +23,7 @@
                 >$(document).ready(function() {
             $('#browser_container').fileTree({
                 root: '<%=browsePath%>',
-                script: 'resources/script/jqueryFileTree/jqueryFileTree.jsp',
+                script: '${pageContext.request.contextPath}/resources/script/jqueryFileTree/jqueryFileTree.jsp',
                 expandSpeed: 1000,
                 collapseSpeed: 1000,
                 folderEvent: 'click',

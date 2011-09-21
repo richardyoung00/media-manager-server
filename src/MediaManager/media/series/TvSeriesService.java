@@ -15,6 +15,8 @@ public class TvSeriesService {
     private PropertyFetcher properties = new PropertyFetcher();
     private TheTVDB tvDB;
 
+    //TODO: figure out how to return a list of seasons in a series and what episodes belong to what season.
+
     public TvSeriesService(){
         tvDB = new TheTVDB(properties.getString("apiKey"));
     }
@@ -40,6 +42,7 @@ public class TvSeriesService {
     }
 
     public void getBanners(){
+        //TODO fix this method
         Banners banners = tvDB.getBanners("73739");
     }
 

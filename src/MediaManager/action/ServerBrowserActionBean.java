@@ -6,28 +6,27 @@ import net.sourceforge.stripes.action.ForwardResolution;
 import net.sourceforge.stripes.action.Resolution;
 import net.sourceforge.stripes.action.UrlBinding;
 
-import java.util.Properties;
 
-@UrlBinding("/server.action")
+@UrlBinding("/server/{mediaType=series}")
 public class ServerBrowserActionBean extends BaseActionBean {
 
-    private String media;
+    private String mediaType;
 
     @Authentication
     @DefaultHandler
     public Resolution view() {
-        if (media != null && !media.isEmpty()) {
-            String browsePath = properties.getString("media.path."+media);
+        if (mediaType != null && !mediaType.isEmpty()) {
+            String browsePath = properties.getString("media.path."+mediaType);
             getContext().getRequest().getSession().setAttribute("browsePath",browsePath);
         }
         return new ForwardResolution("/WEB-INF/jsp/serverBrowser.jsp");
     }
 
-    public String getMedia() {
-        return media;
+    public String getMediaType() {
+        return mediaType;
     }
 
-    public void setMedia(String media) {
-        this.media = media;
+    public void setMediaType(String mediaType) {
+        this.mediaType = mediaType;
     }
 }

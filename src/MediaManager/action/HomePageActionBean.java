@@ -6,7 +6,7 @@ import net.sourceforge.stripes.action.ForwardResolution;
 import net.sourceforge.stripes.action.Resolution;
 import net.sourceforge.stripes.action.UrlBinding;
 
-@UrlBinding("/home.action")
+@UrlBinding("/home")
 public class HomePageActionBean extends BaseActionBean {
 
     @Authentication

@@ -11,7 +11,7 @@
 <body>
 
 <%
-    String redirectURL = "home.action";
+    String redirectURL = "home";
     response.sendRedirect(redirectURL);
 %>
 
