@@ -9,6 +9,7 @@
       <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-logging.jar!/" />
       <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/stripesstuff-0.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/thetvdbapi-1.2-SNAPSHOT-r81.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/jstl-impl-1.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

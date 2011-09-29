@@ -33,7 +33,7 @@ public class LoginActionBean extends BaseActionBean {
 
 
     public Resolution login() {
-        User user = userDataProvider.findUser(getUsername());
+        User user = userDataProvider.findUserByName(getUsername());
 
         if (user.getId() <= 0) {
             getContext().getValidationErrors().add("username", new SimpleError("Username not found"));

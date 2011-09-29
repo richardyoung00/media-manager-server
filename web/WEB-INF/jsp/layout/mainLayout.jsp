@@ -1,35 +1,33 @@
-<
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="stripes" uri="http://stripes.sourceforge.net/stripes.tld" %>
+<%@include file="/WEB-INF/jsp/common/taglibs.jsp" %>
 
-<stripes:layout-definition>
+<s:layout-definition>
     <html>
     <head>
         <title>${pageTitle}</title>
 
-        <stripes:layout-component name="html_head"/>
+        <s:layout-component name="html_head"/>
 
-        <stripes:layout-component name="pageResources">
+        <s:layout-component name="pageResources">
             <jsp:include page="/WEB-INF/jsp/layout/_pageResources.jsp"/>
-        </stripes:layout-component>
+        </s:layout-component>
 
     </head>
     <body>
-    <stripes:layout-component name="header">
+    <s:layout-component name="header">
         <jsp:include page="/WEB-INF/jsp/layout/_header.jsp"/>
-    </stripes:layout-component>
+    </s:layout-component>
 
-    <stripes:layout-component name="menu">
+    <s:layout-component name="menu">
         <jsp:include page="/WEB-INF/jsp/layout/_menu.jsp"/>
-    </stripes:layout-component>
+    </s:layout-component>
 
     <div class="pageContent">
-        <stripes:layout-component name="contents"/>
+        <s:layout-component name="contents"/>
     </div>
 
-    <stripes:layout-component name="footer">
+    <s:layout-component name="footer">
         <jsp:include page="/WEB-INF/jsp/layout/_footer.jsp"/>
-    </stripes:layout-component>
+    </s:layout-component>
     </body>
     </html>
-</stripes:layout-definition>
+</s:layout-definition>

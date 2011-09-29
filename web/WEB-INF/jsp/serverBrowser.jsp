@@ -1,9 +1,7 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="stripes" uri="http://stripes.sourceforge.net/stripes.tld" %>
-<%@ taglib prefix="security" uri="http://www.stripes-stuff.org/security.tld" %>
+<%@include file="/WEB-INF/jsp/common/taglibs.jsp" %>
 
-<stripes:layout-render name="/WEB-INF/jsp/layout/mainLayout.jsp" pageTitle="Server Browser">
-    <stripes:layout-component name="contents">
+<s:layout-render name="/WEB-INF/jsp/layout/mainLayout.jsp" pageTitle="Server Browser">
+    <s:layout-component name="contents">
         <%--Imports--%>
         <link rel="stylesheet" type="text/css"
               href="${pageContext.request.contextPath}/resources/style/jqueryFileTree.css"/>
@@ -67,7 +65,7 @@
 
         Browsing  ${browsePath} on the server
 
-        <stripes:form beanclass="MediaManager.action.ServerBrowserActionBean" focus="">
+        <s:form beanclass="MediaManager.action.ServerBrowserActionBean" focus="">
 
 
 
@@ -86,7 +84,7 @@
                 <li class="quit separator"><a href="#quit">Quit</a></li>
             </ul>
 
-        </stripes:form>
+        </s:form>
 
-    </stripes:layout-component>
-</stripes:layout-render>
+    </s:layout-component>
+</s:layout-render>
